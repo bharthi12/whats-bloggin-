@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+
+{% block title %}
+Create post
+{% endblock %}
+
+
+{% block content %}
+<h1>Create New Post</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+   <!--Action "" means submit the form to the same URL-->
+    <label>Title</label>
+    <br>
+    <input type="text" name="title">
+    <br><br>
+    <label>Content</label>
+    <br>
+    <textarea name="content"></textarea>
+    <br><br>
+    <button type="submit">Publish</button>
+
+</form>
+
+{% endblock%}
+
+
+
