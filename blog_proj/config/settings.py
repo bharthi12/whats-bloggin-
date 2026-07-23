@@ -15,7 +15,9 @@ from decouple import config, Csv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://whats-bloggin-production.up.railway.app",
+]
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # Reads from an environment variable in production (Railway), and falls back
