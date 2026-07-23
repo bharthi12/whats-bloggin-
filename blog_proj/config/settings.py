@@ -28,7 +28,11 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 # Comma-separated list in the env var, e.g. "yourapp.up.railway.app,127.0.0.1"
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='127.0.0.1,localhost', cast=Csv())
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "whats-bloggin-production.up.railway.app",
+]
 
 
 # Application definition
