@@ -1,4 +1,4 @@
-# What's Bloggin'
+#  Bloggin' It
 
 A blogging website built with Django.
 
